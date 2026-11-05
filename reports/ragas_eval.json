@@ -1,0 +1,71 @@
+{
+  "n_samples": 200,
+  "gold_answer_contained": 0.665,
+  "gold_doc_retrieval_rate": 0.98,
+  "ragas": {
+    "status": "skipped",
+    "reason": "No live Gemini API key provided; reporting gold_answer_contained"
+  },
+  "samples_summary": [
+    {
+      "question": "How does the secondary theory say most cpDNA is structured?",
+      "gold_answer_contained": false,
+      "gold_doc_retrieved": true,
+      "rewrite_count": 2
+    },
+    {
+      "question": "What is the name of the two-tentacled cydippid that feedsentirely on salps calle",
+      "gold_answer_contained": false,
+      "gold_doc_retrieved": true,
+      "rewrite_count": 2
+    },
+    {
+      "question": "What drove increased rental prices in East New York?",
+      "gold_answer_contained": true,
+      "gold_doc_retrieved": true,
+      "rewrite_count": 2
+    },
+    {
+      "question": "In what city's Marriott did the Panthers stay?",
+      "gold_answer_contained": true,
+      "gold_doc_retrieved": true,
+      "rewrite_count": 2
+    },
+    {
+      "question": "What is usual form of oxygen bound compounds?",
+      "gold_answer_contained": true,
+      "gold_doc_retrieved": true,
+      "rewrite_count": 2
+    },
+    {
+      "question": "What previous work did Lavoisier experiments discredit?",
+      "gold_answer_contained": true,
+      "gold_doc_retrieved": true,
+      "rewrite_count": 2
+    },
+    {
+      "question": "Where did the residents of Antioch flee to?",
+      "gold_answer_contained": false,
+      "gold_doc_retrieved": true,
+      "rewrite_count": 2
+    },
+    {
+      "question": "When was 7 Lincoln Square completed?",
+      "gold_answer_contained": false,
+      "gold_doc_retrieved": true,
+      "rewrite_count": 2
+    },
+    {
+      "question": "Which Doctor Who show was the largest simulcast of a TV drama?",
+      "gold_answer_contained": false,
+      "gold_doc_retrieved": true,
+      "rewrite_count": 2
+    },
+    {
+      "question": "What is the estimated cost of the V&A branded gallery?",
+      "gold_answer_contained": true,
+      "gold_doc_retrieved": true,
+      "rewrite_count": 2
+    }
+  ]
+}

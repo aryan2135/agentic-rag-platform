@@ -1,0 +1,11 @@
+.env
+.venv/
+.cache/
+__pycache__/
+*.pyc
+qdrant_storage/
+.pytest_cache/
+
+tools/
+storage/
+.qdrant-initialized

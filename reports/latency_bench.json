@@ -1,0 +1,9 @@
+{
+  "n_requests": 100,
+  "retrieval_path_p50_ms": 2867.28,
+  "retrieval_path_p95_ms": 5359.8,
+  "end_to_end_p50_ms": 2963.91,
+  "end_to_end_p95_ms": 5570.31,
+  "concurrency_8_throughput_rps": 0.4,
+  "concurrent_success_count": 100
+}
