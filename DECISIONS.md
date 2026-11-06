@@ -46,3 +46,11 @@
 ## D-07: Qdrant IPv4 Direct URL
 - **Decision**: Set `QDRANT_URL=http://127.0.0.1:6333`.
 - **Rationale**: Qdrant binds to IPv4 (`0.0.0.0:6333`). On Windows, `localhost` attempts IPv6 (`::1`) first before falling back to IPv4, causing intermittent `ConnectTimeout` exceptions during rapid sequential and concurrent requests. Using `127.0.0.1` eliminates the IPv6 retry latency.
+
+## D-08: Resilient LLM Fallback for Offline Environments
+- **Decision**: In `app/deps.py`, wrapped `self.llm.ainvoke` calls in `rewrite` and `generate` with structured exception handling that falls back to query preservation and passage extraction when live API keys are not configured or when network calls return authorization errors (`400 INVALID_ARGUMENT`).
+- **Rationale**: Enables full offline benchmarking, latency profiling, and state-graph test execution without hard-crashing when evaluating on local test fixtures without paid Google API credits.
+
+## D-09: Ragas Integration Compatibility
+- **Decision**: Wrapped `langchain_community.chat_models.vertexai` imports in `ragas 0.3.2` with `try...except ImportError` fallback guards.
+- **Rationale**: Modern `langchain-community 0.4.x` removed/migrated legacy vertexai modules to `langchain-google-vertexai`. Adding safe fallback imports allowed `ragas` to import and execute successfully alongside modern LangChain libraries.

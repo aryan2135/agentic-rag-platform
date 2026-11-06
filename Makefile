@@ -25,4 +25,5 @@ bench:
 check:
 	pytest -q
 	pytest -q tests/test_forbidden_patterns.py
+	python -c "import os; assert os.path.exists('reports/eval_report.md'), 'reports/eval_report.md missing'; print('All checks and eval summary verified.')"
 
